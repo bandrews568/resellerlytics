@@ -651,10 +651,24 @@ footer {
 
     .badges-container {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 4rem;
+        /* Increased to accommodate banners */
+        margin-top: 2rem;
     }
 
     .badge-wrapper img {
         height: 45px;
+    }
+
+    /* Enforce centering on mobile */
+    .features-left .feature-item,
+    .features-right .feature-item {
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature-item p {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
