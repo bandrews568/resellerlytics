@@ -647,6 +647,19 @@ footer {
 
     .hero {
         padding-top: 140px;
+        padding-bottom: 60px;
+        /* Reduced from 120px */
+    }
+
+    .features {
+        padding-top: 60px;
+        /* Reduced from 120px */
+        padding-bottom: 60px;
+    }
+
+    .section-header {
+        margin-bottom: 3rem;
+        /* Reduced from 5rem */
     }
 
     .badges-container {
