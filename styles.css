@@ -445,15 +445,15 @@ header .container {
 
 .phone-slider {
     display: flex;
-    width: 400%;
-    /* 4 images */
+    width: 600%;
+    /* 6 images */
     height: 100%;
-    animation: slide 16s infinite;
+    animation: slide 24s infinite;
 }
 
 .phone-slider img {
-    width: 25%;
-    /* 1/4 of the slider width */
+    width: 16.666%;
+    /* 1/6 of the slider width */
     height: 100%;
     object-fit: cover;
     object-position: top;
@@ -462,23 +462,33 @@ header .container {
 @keyframes slide {
 
     0%,
-    20% {
+    13.33% {
         transform: translateX(0);
     }
 
-    25%,
-    45% {
-        transform: translateX(-25%);
+    16.66%,
+    30% {
+        transform: translateX(-16.666%);
+    }
+
+    33.33%,
+    46.66% {
+        transform: translateX(-33.333%);
     }
 
     50%,
-    70% {
+    63.33% {
         transform: translateX(-50%);
     }
 
-    75%,
-    95% {
-        transform: translateX(-75%);
+    66.66%,
+    80% {
+        transform: translateX(-66.666%);
+    }
+
+    83.33%,
+    96.66% {
+        transform: translateX(-83.333%);
     }
 
     100% {
