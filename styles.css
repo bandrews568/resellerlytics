@@ -452,11 +452,14 @@ header .container {
 }
 
 .phone-slider img {
-    width: 16.666%;
+    /* Explicitly set flex-shrink to avoid issues in some browsers */
+    flex-shrink: 0;
+    width: calc(100% / 6);
     /* 1/6 of the slider width */
     height: 100%;
     object-fit: cover;
     object-position: top;
+    display: block;
 }
 
 @keyframes slide {
@@ -468,27 +471,27 @@ header .container {
 
     16.66%,
     30% {
-        transform: translateX(-16.666%);
+        transform: translateX(calc(-100% / 6));
     }
 
     33.33%,
     46.66% {
-        transform: translateX(-33.333%);
+        transform: translateX(calc(-200% / 6));
     }
 
     50%,
     63.33% {
-        transform: translateX(-50%);
+        transform: translateX(calc(-300% / 6));
     }
 
     66.66%,
     80% {
-        transform: translateX(-66.666%);
+        transform: translateX(calc(-400% / 6));
     }
 
     83.33%,
     96.66% {
-        transform: translateX(-83.333%);
+        transform: translateX(calc(-500% / 6));
     }
 
     100% {
